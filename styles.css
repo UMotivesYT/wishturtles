@@ -1,0 +1,138 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}  
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}  
+
+.menu-wrapper {
+  position: relative;
+}  
+
+.menu-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  background-color: rgba(100, 110, 110, 0.4);
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  border-radius: 0.67rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+
+.menu-button:focus {
+  outline: none;
+}  
+
+.menu-button:focus + .nav-menu {
+  display: block;
+  transform: translateX(0%);
+}
+
+.nav-menu.active {
+  display: block;
+}  
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}  
+
+.nav-links li {
+  display: block;
+}  
+
+.nav-links li a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+} 
+
+.homehtml {
+  background-image: url("images/home\ page\ no\ img.png");
+  background-size: 120rem 59rem;
+}
+.presentshtml {
+  background-image: url("images/Presents\ page.png");
+  background-size: 120rem 59rem;
+}
+.wisheshtml {
+  background-image: url("images/Wishes\ Page.png");
+  background-size: 120rem 59rem;
+}
+.visionhtml {
+  background-image: url("images/Vision\ Page.png");
+  background-size: 120rem 59rem;
+}
+.storyhtml {
+  background-image: url("images/Story\ Page.png");
+  background-size: 120rem 59rem;
+}
+
+.nav-menu {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  padding: 1.8rem;
+  text-align: left;
+  width: auto;
+}  
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}  
+
+.nav-links li a {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu.active {
+  display: block;
+  transform: translateX(-100%);
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  background-color: #222;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
